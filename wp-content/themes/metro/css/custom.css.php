@@ -300,6 +300,7 @@ body
 
 .bg-color-menu,
 .primary-menu li,
+.primary-menu li ul li,
 #inPageCategoryList li
 {
 	background-color:<?php echo $background_menu_color ?>;
