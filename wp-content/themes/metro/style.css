@@ -4688,3 +4688,66 @@ background-color:transparent;
 	height:60px;
 	margin-top:3px;
 }
+
+.post-big .post-date-inner div.eventTime{
+	font-size:150%;
+	line-height: 1;
+	margin-bottom: 10px;
+}
+
+.post-big .post-date-inner a.eventLocation{
+	margin-top:5px;
+	text-decoration:underline;
+	color:white;
+}
+
+.post-big .post-date-inner a.eventLocation:hover{
+	text-decoration:none;
+}
+
+.toggler{
+	height:30px;
+	overflow:hidden;
+	-webkit-transition:all 0.3s;
+	-moz-transition:all 0.3s;
+	transition:all 0.3s;
+	display:block;
+}
+.toggler.toggled{
+	height:350px;
+}
+.toggler .toggleTrigger{
+	cursor:pointer;
+	margin-top:0;
+	height:30px;
+	display:block;
+	margin-top:10px;
+}
+
+.toggler .toggleTrigger:before{
+	content:'\00a0\25b8';
+	font-size:50%;
+}
+.toggler.toggled .toggleTrigger:before{
+	content:'\00a0\25be';
+}
+.toggler .toggleTrigger span{
+	text-decoration:underline;
+}
+
+.eventBlock{
+	border-bottom:1px solid #ccc;
+	padding-bottom:10px;
+}
+.event-date{
+
+}
+.event-date>div{
+	font-size:150%;
+}
+.event-date .nextEvent{
+	font-size:100%;
+}
+.event-date .eventReoccurs{
+	font-size:80%;
+}

@@ -1,5 +1,9 @@
 jQuery(document).ready(function(){
-	
+
+	jQuery('.toggler').click(function(e){
+		var $tog = jQuery(this).toggleClass('toggled');
+	})
+
 	if(!jQuery.browser)
 		jQuery.browser=browser_detect();
 	
