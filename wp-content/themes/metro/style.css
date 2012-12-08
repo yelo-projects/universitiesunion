@@ -557,14 +557,6 @@ img {
  * Logo
  ************************/
 
-.logo-pane-inner
-{
-	position:absolute;
-	bottom:0;
-	left:0;
-	right:0;
-}
-
 .logo-text
 {
 	line-height:30px;
@@ -582,7 +574,7 @@ img {
 .logo-image img
 {
 	width:auto;
-	height:auto;
+	height:100%;
 	display:block;
 }
 	
@@ -4648,3 +4640,32 @@ blockquote p:first-of-type
 {
 	text-align:right;
 }
+
+#wp-calendar .event, .button, input[type="submit"], input[type="submit"].button{
+	background-color:#ffcf00;
+	background-image:none;
+	box-shadow:none;
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none;
+}
+
+#eo_events_agenda_widget-2_container .agenda-nav{
+	display:none;
+}
+
+.mc_form_inside>div{
+	margin-top:5px;
+}
+#mc_display_rewards{
+	font-size:10px;
+}
+
+.logo-pane, .bg-color-menu.logo-pane{
+	box-shadow:none;
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none;
+background-color:transparent;
+}
+  .videoEmbed{
+        max-width: 75%;
+  }

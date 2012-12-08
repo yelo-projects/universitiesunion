@@ -328,3 +328,9 @@ if(get_option(OM_THEME_PREFIX . 'hide_homepage_on_mobile') == 'true') {
 	add_action('wp_head', 'om_hide_homepage_slider_on_mobile');
 	
 }
+
+add_filter('embed_oembed_html', 'my_embed_oembed_html', 99, 4);
+
+function my_embed_oembed_html($html, $url, $attr, $post_id) {
+	return '<div class="videoEmbed">' . $html . '</div>';
+}

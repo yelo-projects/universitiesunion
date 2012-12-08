@@ -174,7 +174,6 @@
 		font-size:80%;
 	}
 	
-	.logo-pane-inner,
 	.primary-menu li a span
 	{
 		left:18px;
@@ -195,7 +194,7 @@
 	
 	.logo-image img
 	{
-		max-height:120px;
+		/**max-height:120px;**/
 	}
 	
 	.primary-menu li ul a
@@ -627,7 +626,6 @@
 		font-size:80%;
 	}
 	
-	.logo-pane-inner,
 	.primary-menu li a span
 	{
 		left:12px;
@@ -648,7 +646,7 @@
 	
 	.logo-image img
 	{
-		max-height:104px;
+	/**	max-height:104px;**/
 	}
 	
 	.primary-menu li ul a
@@ -1068,7 +1066,6 @@
 		font-size:11px;
 	}
 	
-	.logo-pane-inner,
 	.primary-menu li a span
 	{
 		left:6px;
@@ -1099,7 +1096,7 @@
 	
 	.logo-image img
 	{
-		max-height:66px;
+	/**	max-height:66px;**/
 	}
 	
 	.big-slider
@@ -1449,7 +1446,7 @@
 	
 	.logo-image img
 	{
-		max-height:80px;
+	/**	max-height:80px;**/
 	}
 	
 	.primary-menu
