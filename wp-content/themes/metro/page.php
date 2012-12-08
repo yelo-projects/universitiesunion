@@ -2,7 +2,7 @@
 get_header();
 $mainCat = get_the_category();
 $mainCatID = $mainCat[0]->cat_ID;
-$catList =  wp_list_categories('orderby=count&show_count=0&use_desc_for_title=0&title_li&echo=0&child_of='.$mainCatID);
+$catList =  wp_list_categories('orderby=count&show_count=0&use_desc_for_title=0&title_li&echo=0&&depth=-1&child_of='.$mainCatID);
 ?>
 
 		<div class="block-6 no-mar content-with-sidebar">
