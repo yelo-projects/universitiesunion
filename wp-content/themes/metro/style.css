@@ -597,7 +597,8 @@ img {
 	cursor:default;
 }
 
-.primary-menu li a
+.primary-menu li a,
+#inPageCategoryList li a
 {
 	display:block;
 	height:100%;
@@ -4666,6 +4667,24 @@ blockquote p:first-of-type
 	-moz-box-shadow:none;
 background-color:transparent;
 }
-  .videoEmbed{
+.videoEmbed{
         max-width: 75%;
-  }
+}
+
+#inPageCategoryList, #inPageCategoryList li{
+	list-style-type:none;
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+
+#inPageCategoryList li a{
+	display:block;
+	line-height:2;
+	padding:10px;
+}
+
+#inPageCategoryList li{
+	height:60px;
+	margin-top:3px;
+}

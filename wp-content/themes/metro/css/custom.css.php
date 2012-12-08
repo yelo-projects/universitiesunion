@@ -299,39 +299,47 @@ body
 /* Menu */
 
 .bg-color-menu,
-.primary-menu li
+.primary-menu li,
+#inPageCategoryList li
 {
 	background-color:<?php echo $background_menu_color ?>;
 	<?php if($background_menu_color_a) { ?> background-color:<?php echo $background_menu_color_a ?>; <?php } ?>
 }
 
 .primary-menu a,
-.logo-text
+.logo-text,
+#inPageCategoryList li a
 {
 	color:<?php echo $menu_text_color ?>;
 }
 
 .primary-menu li a:hover,
 .primary-menu li.active a,
-.primary-menu li ul a
+.primary-menu li ul a,
+#inPageCategoryList li a
 {
 	color:<?php echo $menu_text_color_hover ?>;
 }
 
 .primary-menu li ul,
 .primary-menu a:hover,
-.primary-menu li.active a
+.primary-menu li.active a,
+#inPageCategoryList li a:hover,
+##inPageCategoryList li.active a
 {
 	background-color:<?php echo $menu_bg_hover ?>;
 }
 
-.primary-menu li ul a
+.primary-menu li ul a,
+#inPageCategoryList li a
 {
 	border-bottom-color:<?php echo $menu_text_color_hover_a ?>;
 }
 
 .primary-menu li ul a:hover,
-.primary-menu li ul li.active > a
+.primary-menu li ul li.active > a,
+#inPageCategoryList li a:hover,
+##inPageCategoryList li.active> a
 {
 	background-color:<?php echo $background_menu_color ?>;
 	color:<?php echo $menu_text_color ?>;
@@ -389,7 +397,7 @@ a,
 .headline-text a:hover,
 .testimonials-block .item .qo,
 .post-big .post-title a:hover,
-.sort-menu li a.button.active .count
+.sort-menu li a.button.active .count,
 {
 	color:<?php echo $hightlight_color ?>;
 }

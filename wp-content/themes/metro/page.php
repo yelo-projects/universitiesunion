@@ -1,5 +1,9 @@
 <?php
-get_header(); ?>
+get_header();
+$mainCat = get_the_category();
+$mainCatID = $mainCat[0]->cat_ID;
+$catList =  wp_list_categories('orderby=count&show_count=0&use_desc_for_title=0&title_li&echo=0&child_of='.$mainCatID);
+?>
 
 		<div class="block-6 no-mar content-with-sidebar">
 			<div class="block-6 bg-color-main">
@@ -19,8 +23,14 @@ get_header(); ?>
 						<?php } ?>
 					</div>
 					<div class="clear page-h1-divider"></div>
-	      		
-	          <?php echo get_option(OM_THEME_PREFIX . 'code_after_page_h1'); ?>
+						<?php echo $mainCat->ID; ?>
+						<?php if($catList): ?>
+						<h2>Go to:</h2>
+						<ul id="inPageCategoryList"> 
+							<?php echo $catList; ?>
+						</ul>
+						<?php endif; ?>
+				  <?php echo get_option(OM_THEME_PREFIX . 'code_after_page_h1'); ?>
 	
 						<?php while (have_posts()) : the_post(); ?>
 			
@@ -31,7 +41,7 @@ get_header(); ?>
 <?php
 global $post;
 $cats=array();
-foreach(get_the_category() as $category) {
+foreach($mainCat as $category) {
     $cats[]=$category->cat_ID;
 }
 $showposts = -1; // -1 shows all posts
