@@ -530,7 +530,12 @@
 	{
 		width:840px;
 	}
-	
+
+	.block-6.no-mar.content-with-sidebar
+	{
+		width:1260px;
+	}
+
 	.block-7
 	{
 		width:968px;
