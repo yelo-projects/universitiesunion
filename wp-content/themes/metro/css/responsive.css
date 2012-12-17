@@ -1895,7 +1895,5 @@
 	}
 }
 
-.block-6.no-mar.content-with-sidebar
-{
-width:100%;
-}
+/**/
+body.home .block-6.no-mar.content-with-sidebar{width:100%;}/**/
