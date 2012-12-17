@@ -1,4 +1,7 @@
 <?php
+
+	ob_start();
+
 	$path_to_file = explode( 'wp-content', __FILE__ );
 	$path_to_wp = $path_to_file[0];
 	require_once( $path_to_wp . '/wp-load.php' );
@@ -559,3 +562,11 @@ input[type=reset]:hover,
 {
 	color:<?php echo $footer_side_text_color ?>;
 }
+
+<?php
+
+	$txt = ob_get_contents();
+	file_put_contents(__DIR__.'/custom.css',$txt);
+	ob_end_clean();
+	echo $txt;
+?>

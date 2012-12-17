@@ -4660,13 +4660,14 @@ blockquote p:first-of-type
 #mc_display_rewards{
 	font-size:10px;
 }
-
+/**
 .logo-pane, .bg-color-menu.logo-pane{
 	box-shadow:none;
 	-webkit-box-shadow:none;
 	-moz-box-shadow:none;
 background-color:transparent;
 }
+
 .videoEmbed{
         max-width: 75%;
 }
@@ -4751,3 +4752,5 @@ background-color:transparent;
 .event-date .eventReoccurs{
 	font-size:80%;
 }
+
+**/

@@ -19,7 +19,7 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="all" />
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/custom.css.php" type="text/css" />
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/custom.css" type="text/css" />
 	<?php if(get_option(OM_THEME_PREFIX . 'responsive') == 'true') : ?>
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/responsive.css" type="text/css" />
 	<?php endif; ?>
