@@ -1,0 +1,13 @@
+@import url("../style.css");
+
+.content{
+	margin-top:100px;
+	text-align:center;
+}
+h1{
+	width:100%;
+	text-align:center;
+}
+.admin, #footer, #header{
+	display:none;
+}
